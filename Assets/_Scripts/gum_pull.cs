@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class gum_pull : MonoBehaviour
 {
+
+    public Animator anim;
+    private int hits;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = gameObject.GetComponent<Animator>();
+        hits = 0;
     }
 
     // Update is called once per frame
@@ -15,13 +20,12 @@ public class gum_pull : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = Resources.Load<Sprite>("Sprites/alexander_gum2");
+            anim.Play("gum_pull2");
+            hits++;
         }
-//else {
-//
-// SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-// spriteRenderer.sprite = Resources.Load<Sprite>("Sprites/alexander_gum1.png");
-// }
+        else
+        {
+            anim.Play("gum_pull");
+        }
     }
 }
