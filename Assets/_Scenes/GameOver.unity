@@ -368,7 +368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -143}
+  m_AnchoredPosition: {x: 0, y: -115.88}
   m_SizeDelta: {x: 291.34, y: 68.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911801094
@@ -590,8 +590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You couldn't get through the day! Alexander has become so frustrated that
-    he fell asleep!
+  m_text: You passed out from frustration and couldn't get through the day!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b89188e1aa5c2504dbe258c3ca74c4f5, type: 2}
   m_sharedMaterial: {fileID: -7412501004459030830, guid: b89188e1aa5c2504dbe258c3ca74c4f5, type: 2}

@@ -31,7 +31,19 @@ public class ProgressBar : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("SchoolNarrative");
+            string sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName == "GumGame")
+            {
+                SceneManager.LoadScene("SchoolNarrative");
+            }
+            else if (sceneName == "SchoolGame")
+            {
+                SceneManager.LoadScene("BHNarrative");
+            }
+            else if (sceneName == "BHGame")
+            {
+                SceneManager.LoadScene("Ending");
+            }
         }
     }
 
