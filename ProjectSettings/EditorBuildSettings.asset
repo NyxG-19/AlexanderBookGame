@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/SchoolNarrative.unity
     guid: fc4a818c990259f4fbd0c5fa1e613e22
+  - enabled: 1
+    path: Assets/_Scenes/SchoolGame.unity
+    guid: dcfabb558841051448e9cea4e4f8e649
+  - enabled: 1
+    path: Assets/_Scenes/BHNarrative.unity
+    guid: 495017354e8bf4e448b423fc49601b78
   m_configObjects: {}
