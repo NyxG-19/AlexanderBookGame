@@ -24,6 +24,7 @@ public class gum_pull : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             hits++;
+            GameControl.control.score++;
         }
         if (Input.GetKey(KeyCode.Space))
         {

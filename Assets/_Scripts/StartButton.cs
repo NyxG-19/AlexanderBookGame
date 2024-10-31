@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
-{ 
+{
+
     public void GumNarrativeScene()
     {
+        GameControl.control.score = 0;
         SceneManager.LoadScene("GumNarrative");
     }
 }
