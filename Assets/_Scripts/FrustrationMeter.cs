@@ -28,7 +28,15 @@ public class FrustrationMeter : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("GameOver");
+            string sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName == "GumGame")
+            {
+                SceneManager.LoadScene("SchoolNarrative");
+            }
+            else if (sceneName == "SchoolGame")
+            {
+                SceneManager.LoadScene("BHNarrative");
+            }
         }
     }
 

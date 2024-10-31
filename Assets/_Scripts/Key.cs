@@ -28,6 +28,7 @@ public class Key : MonoBehaviour
     {
         if (Input.GetKeyDown(animKeys[curKey].ToLower())) {
             fMeter.cur -= 300;
+            GameControl.control.score++;
             NewKey();
         }
     }
